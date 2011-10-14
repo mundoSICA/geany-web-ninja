@@ -29,7 +29,7 @@
 ##########################################################################################
 
 geany_path=`which geany`
-if [ "${geany_path}" = "/usr/bin/geany" ]
+if [ "${geany_path}" = "" ]
 then
 	red="\e[0;31m"
 	END='\e[0m'
