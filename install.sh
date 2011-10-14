@@ -39,7 +39,7 @@ then
 fi
 
 #Instalando Dia y los paquetes necesarios para trabajar en sica
-cp -R ./geany $HOME/.config/geany
+cp -R ./geany $HOME/.config
 
 zenity --info --text="La instalacion ha concluido de forma exitosa"
 
