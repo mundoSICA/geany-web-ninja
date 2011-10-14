@@ -1,0 +1,51 @@
+#Autor: fitorec 2010 <http://fitorec.wordpress.com>
+#Archivo: $HOME/.config/geany/filedefs/filetypes.po
+
+#Descripción: Define los estilo y las extensiones de los archivos de traducción (.po)
+#El archivo fue generado a partir de configuracion base:
+# http://www.barryvan.com.au/2009/01/geany-ide-tango-dark-colour-scheme/
+
+[styling]
+# foreground;background;bold;italic
+default=0x7f0000;0x1a1a1a;true;false
+comment=0x808080;0x1a1a1a;false;false
+msgid=0x84ff00;0x1a1a1a;true;false
+msgid_text=0xffa500;0x1a1a1a;false;false
+msgstr=0x0077ff;0x1a1a1a;true;false
+msgstr_text=0xffa500;0x1a1a1a;false;false
+msgctxt=0x007f00;0x1a1a1a;true;false
+msgctxt_text=0x007f00;0x1a1a1a;false;false
+fuzzy=0xffa500;0x1a1a1a;true;false
+
+# the lexer don't support keywords
+
+
+[settings]
+# default extension used when saving files
+extension=po
+
+# the following characters are these which a "word" can contains, see documentation
+#wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+
+# if only single comment char is supported like # in this file, leave comment_close blank
+comment_open=#
+comment_close=
+
+# set to false if a comment character/string should start at column 0 of a line, true uses any
+# indentation of the line, e.g. setting to true causes the following on pressing CTRL+d
+#command_example();
+# setting to false would generate this
+# command_example();
+# This setting works only for single line comments
+comment_use_indent=true
+
+# context action command (please see Geany's main documentation for details)
+context_action_cmd=
+
+
+[build_settings]
+# %f will be replaced by the complete filename
+# %e will be replaced by the filename without extension
+# (use only one of it at one time)
+compiler=msgfmt --check --check-accelerators=_ "%f"
+
