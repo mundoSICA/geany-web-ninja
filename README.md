@@ -6,9 +6,11 @@ Este proyecto es una configuración para el uso del `geany` donde agregamos el t
 ##como usar
 
 ###1. Descarga el paquete
-	wget https://github.com/mundoSICA/geany-web-ninja/tarball/master -O mundoSICA-geany-web-ninja.tar.gz
 
-###2.- Descomprime el paquete.
+<a href="https://github.com/mundoSICA/geany-web-ninja/tarball/master" class="button icon arrowdown">Descarga directa <b>.tar.gz</b></a>
+<a href="https://github.com/mundoSICA/geany-web-ninja/zipball/master" class="button icon arrowdown">Descarga directa <b>.zip</b></a>
+
+###2.- Descomprime el paquete(`p.e. targ.gz`).
 	tar -xvzf mundoSICA-geany-web-ninja.tar.gz
 
 ###3.- Ingresa al directorio(p.e. `cd mundoSICA-geany-web-ninja-0c92631`).
