@@ -78,11 +78,11 @@ translucency=256;256;false;false
 
 # style for a highlighted line (e.g when using Goto line or goto tag)
 # only the first and second argument is interpreted
-marker_line=0x000000;0xffff00;false;false
+marker_line=0xb7b7b7;0xFF6300;false;false
 
 # style for a highlighted search result (e.g when using "Mark" in Search dialogs)
 # only the first and second argument is interpreted
-marker_search=0x000000;0xB8F4B8;false;false
+marker_search=0x000000;0xE5EB61;false;false
 
 # translucency for the line marker(first argument) and the search marker (second argument)
 # only the first and second argument is interpreted
