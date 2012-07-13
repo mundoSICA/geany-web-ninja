@@ -12,12 +12,10 @@ if(isset($argv[1]) && file_exists($argv[1])){
   
 }
 /**
- * Convierte tu código php a un código html bonito :¬),
+ * Conviert you php code to a nice HTML highlightCode :¬)
  *
- * @param tipo $parametro1 descripción del párametro 1.
- * @return tipo descripcion de lo que regresa
- * @access publico/privado
- * @link [URL de mayor infor]
+ * @param string $fileName 
+ * @return highlightCode
  */
 function highlight_geany($fileName) {
 	return str_replace(
