@@ -28,6 +28,7 @@
 #          `'         `'
 ##########################################################################################
 
+
 geany_path=`which geany`
 if [ "${geany_path}" = "" ]
 then
@@ -38,8 +39,28 @@ then
 	exit 1
 fi
 
-#Instalando Dia y los paquetes necesarios para trabajar en sica
-cp -R ./geany $HOME/.config
+#Descargando archivos
+function descargar
+{
+	url="https://github.com/mundoSICA/geany-web-ninja/archive/master.zip";
+	wget $url -O /tmp/geany_web_ninja.zip
+}
 
+function descompactar_instalar
+{
+	#Descomprimimos
+	unzip  /tmp/geany_web_ninja.zip -d /tmp/geany_web_ninja/
+	#Copiamos archivos de configuración
+	cp -R  /tmp/geany_web_ninja/geany $HOME/.config/
+	#Borramos los archivos
+	rm -f  /tmp/geany_web_ninja.zip
+	rm -fr /tmp/geany_web_ninja/
+}
+
+descargar;
+descompactar_instalar;
 zenity --info --text="La instalacion ha concluido de forma exitosa"
+exit 0;
+
+
 
