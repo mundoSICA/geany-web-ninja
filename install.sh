@@ -32,6 +32,7 @@
 
 # bash < <(curl -s https://raw.github.com/mundoSICA/geany-web-ninja/master/install.sh)
 
+
 geany_path=`which geany`
 if [ "${geany_path}" = "" ]
 then
@@ -68,5 +69,3 @@ descargar;
 descompactar_instalar;
 zenity --info --text="La instalacion ha concluido de forma exitosa"
 exit 0;
-
-
