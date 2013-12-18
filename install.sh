@@ -27,18 +27,10 @@
 #      ~;_  >- . . -<  _i~
 #          `'         `'
 ##########################################################################################
-function descargar
-{
-	url="http://localhost/Joomla_3.0.2-Spanish-Pack_Completo.zip";
-	echo "Apunto de descargar ${url}";
-	wget $url -O /tmp/geany_web_ninja.zip
-	unzip /tmp/geany_web_ninja.zip /tmp/
-}
 
-#Instalando Dia y los paquetes necesarios para trabajar en sica
-descargar;
-exit 0;
+# Modo de instalación:
 
+# bash < <(curl -s https://raw.github.com/mundoSICA/geany-web-ninja/master/install.sh)
 
 geany_path=`which geany`
 if [ "${geany_path}" = "" ]
@@ -50,8 +42,31 @@ then
 	exit 1
 fi
 
+#Descargando archivos
+function descargar
+{
+	url="https://github.com/mundoSICA/geany-web-ninja/archive/master.zip";
+	wget $url -O /tmp/geany_web_ninja.zip
+}
 
-cp -R ./geany $HOME/.config
+function descompactar_instalar
+{
+	#Descomprimimos
+	unzip  /tmp/geany_web_ninja.zip -d /tmp/geany_web_ninja/
+	#Copiamos archivos de configuración
+	if [ ! -d "$HOME/.config/geany/" ]; then
+		  # Control will enter here if $DIRECTORY doesn't exist.
+		 mkdir -p "$HOME/.config/geany/"
+	fi
+	cp -r  /tmp/geany_web_ninja/geany-web-ninja-master/geany/* "$HOME/.config/geany/"
+	#Borramos los archivos
+	rm -f  /tmp/geany_web_ninja.zip
+	rm -fr /tmp/geany_web_ninja/
+}
 
+descargar;
+descompactar_instalar;
 zenity --info --text="La instalacion ha concluido de forma exitosa"
+exit 0;
+
 
