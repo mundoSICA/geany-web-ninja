@@ -27,6 +27,18 @@
 #      ~;_  >- . . -<  _i~
 #          `'         `'
 ##########################################################################################
+function descargar
+{
+	url="http://localhost/Joomla_3.0.2-Spanish-Pack_Completo.zip";
+	echo "Apunto de descargar ${url}";
+	wget $url -O /tmp/geany_web_ninja.zip
+	unzip /tmp/geany_web_ninja.zip /tmp/
+}
+
+#Instalando Dia y los paquetes necesarios para trabajar en sica
+descargar;
+exit 0;
+
 
 geany_path=`which geany`
 if [ "${geany_path}" = "" ]
@@ -38,7 +50,7 @@ then
 	exit 1
 fi
 
-#Instalando Dia y los paquetes necesarios para trabajar en sica
+
 cp -R ./geany $HOME/.config
 
 zenity --info --text="La instalacion ha concluido de forma exitosa"
