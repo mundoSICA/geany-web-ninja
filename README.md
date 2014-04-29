@@ -9,12 +9,22 @@ Este proyecto es una configuración para el uso del `geany` donde agregamos el t
 
 	bash < <(curl -s https://raw.github.com/mundoSICA/geany-web-ninja/master/install.sh)
 
+## Instalación en Windows:
+
+De momento no hemos creado algún `script` para la instalación en **Windows**,
+para echar andar **geany web ninja** siga los siguientes pasos:
+
+ - 1. Descargue el repositorio.
+ - 2.- Decomprima
+ - 3.- Copie el contenido de la carpeta `geany` en `C:\Users\<UserName>\AppData\Local\geany\`
+ 
+ > donde: **`<UserName>`** hace referencia al usuario actual.
 
 Bicatola de versiones
 --------------------------------------------------------------------------------
 
  - **1.0** 2011/noviembre/15
- - **1.1- Beta**  2012/julio/12 
+ - **1.1- Beta**  2012/julio/12
 
 Principales caracteristicas versión actual 1.1- Beta
 --------------------------------------------------------------------------------
