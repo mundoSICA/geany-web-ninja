@@ -1,35 +1,40 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
-# foreground;background;bold;italic
-default=0xFFFFFF;0x1E1E1E;false;false
-commentline=0x747474;0x1E1E1E;false;false
-number=0x7ECDFF;0x1E1E1E;false;false
-word=0xFFCB4F;0x1E1E1E;true;false
-string=0xFF5F28;0x1E1E1E;false;false
-character=0xFF5F28;0x1E1E1E;false;false
-operator=0x98BAC5;0x1E1E1E;false;false
-identifier=0xFFFFFF;0x1E1E1E;false;false
-backticks=0x30FF00;0x504250;false;false
-param=0x009f00;0x1E1E1E;false;false
-scalar==0x7ECDFF;0x1E1E1E;false;false
-error=0xF42F02;0x000000;false;false
-here_delim=0xAAFF57;0x1B1B1B;false;false
-here_q=0xAAFF57;0x1E1E1E;false;false
+# Edit these in the colorscheme .conf file instead
+default=default
+commentline=comment_line
+number=number_1
+word=keyword_1
+string=string_1
+character=character
+operator=operator
+identifier=identifier
+backticks=backticks
+param=parameter
+scalar=identifier_1
+error=error
+here_delim=here_doc
+here_q=here_doc
 
 [keywords]
-primary=break case continue do done elif else esac eval exit export fi for function goto if in integer return set shift then until while echo grep sed cat 
+primary=break case continue do done elif else esac eval exit export fi for function goto if in integer return set shift then until while
 
 
 [settings]
 # default extension used when saving files
-#extension=sh
+extension=sh
+
+# MIME type
+mime_type=application/x-shellscript
 
 # the following characters are these which a "word" can contains, see documentation
 #wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 
-# if only single comment char is supported like # in this file, leave comment_close blank
-comment_open=#
-comment_close=
+# single comments, like # in this file
+comment_single=#
+# multiline comments
+#comment_open=
+#comment_close=
 
 # set to false if a comment character/string should start a column 0 of a line, true uses any
 # indentation of the line, e.g. setting to true causes the following on pressing CTRL+d
@@ -41,6 +46,11 @@ comment_use_indent=true
 
 # context action command (please see Geany's main documentation for details)
 context_action_cmd=
+
+[indentation]
+#width=4
+# 0 is spaces, 1 is tabs, 2 is tab & spaces
+#type=1
 
 [build_settings]
 # %f will be replaced by the complete filename

@@ -1,22 +1,6 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # foreground;background;bold;italic
-default=0xffffff;0x1E1E1E;false;false
-commentline=0x747474;0x1E1E1E;false;false
-commentblock=0x747474;0x1E1E1E;false;false
-commentblock2=0x747474;0x1E1E1E;false;false
-commentblock3=0x747474;0x1E1E1E;false;false
-number=0x7ECDFF;0x1E1E1E;false;false
-keyword=0xFFCA4A;0x1E1E1E;true;false
-import=0x8C2421;0x1E1E1E;false;false
-string=0xA18651;0x1E1E1E;false;false
-character=0xA18651;0x1E1E1E;false;false
-class=0xB2A886;0x1E1E1E;True;false
-operator=0x98BAC5;0x1E1E1E;true;false
-identifier=0xffffff;0x1E1E1E;false;false
-capital=0x7BB25A;0x1E1E1E;false;false
-module=0xAD7DAD;0x1E1E1E;false;false
-data=0x5ABEFF;0x1E1E1E;false;false
 
 [keywords]
 # all items must be in one line

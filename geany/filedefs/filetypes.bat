@@ -2,20 +2,6 @@
 
 [styling]
 # foreground;background;bold;italic
-default=0x000000;0x1E1E1E;false;false
-commentline=0x747474;0x1E1E1E;false;false
-number=0x7ECDFF;0x1E1E1E;false;false
-string=0xA18651;0x1E1E1E;false;false
-character=0xA18651;0x1E1E1E;false;false
-word=0xFFCB4F;0x1E1E1E;true;false
-operator=0x98BAC5;0x1E1E1E;false;false
-identifier=0xffffff;0x1E1E1E;false;false
-backticks=0x30FF00;0x504250;false;false
-param=0x009f00;0x1E1E1E;false;false
-scalar==0x7ECDFF;0x1E1E1E;false;false
-
-
-
 
 [keywords]
 primary=break case continue do done elif else esac eval exit export fi for function goto if in integer return set shift then until while

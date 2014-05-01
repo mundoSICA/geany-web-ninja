@@ -1,45 +1,5 @@
 # For complete documentation of this file, please see Geany's main documentation
-[styling]
-# foreground;background;bold;italic
-default=0xffffff;0x1E1E1E;false;false
-
-commentline=0x747474;0x1E1E1E;false;false
-comment=0x747474;0x1E1E1E;false;false
-commentdoc=0x747474;0x1E1E1E;false;false
-number=0x7ECDFF;0x1E1E1E;false;false
-word=0xFFCB4F;0x1E1E1E;true;false
-word2=0xAAFF57;0x1E1E1E;true;false
-string=0xA18651;0x1E1E1E;true;false
-character=0xA18651;0x1E1E1E;true;false
-
-#GUID's
-uuid=0xffffff;0x1E1E1E;false;false
-
-#includes
-preprocessor=0xB2A886;0x1E1E1E;true;false
-
-operator=0x98BAC5;0x1E1E1E;true;false
-#operator=0x7EB35B;0x1E1E1E;true;false
-identifier=0xffffff;0x1E1E1E;false;false
-
-#end of line where string is not closed
-stringeol=0xffffff;0xffffff;true;false
-
-#string @"str"
-verbatim=0xDBB260;0x1E1E1E;false;false
-
-regex=0xAAFF57;0x1E1E1E;false;false
-
-commentlinedoc=0x747474;0x1E1E1E;false;false
-commentdockeyword=0xffffff;0x1E1E1E;false;false
-commentdockeyworderror=0x747474;0x1E1E1E;false;false
-
-#array index
-globalclass=0x7EB35B;0x1E1E1E;false;false
-
-# whether arguments of preprocessor commands should be styled (only first argument is used)
-# 1 to enable, 0 to disable
-styling_within_preprocessor=1;0;false;false
+[styling=C]
 
 [keywords]
 # all items must be in one line
@@ -48,19 +8,31 @@ secondary=
 # these are some doxygen keywords (incomplete)
 docComment=attention author brief bug class code date def enum example exception file fn namespace note param remarks return see since struct throw todo typedef var version warning union
 
+[lexer_properties]
+styling.within.preprocessor=1
+lexer.cpp.track.preprocessor=0
+preprocessor.symbol.$(file.patterns.cpp)=#
+preprocessor.start.$(file.patterns.cpp)=if
+preprocessor.middle.$(file.patterns.cpp)=else elif
+preprocessor.end.$(file.patterns.cpp)=endif
+
 [settings]
+lexer_filetype=C
+
 # default extension used when saving files
-#extension=cs
+extension=cs
+
+# MIME type
+mime_type=text/x-csharp
 
 # the following characters are these which a "word" can contains, see documentation
 #wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 
-# if only single comment char is supported like # in this file, leave comment_close blank
-comment_open=//
-comment_close=
-# this is an alternative way, so multiline comments are used
-#comment_open=/*
-#comment_close=*/
+# single comments, like # in this file
+comment_single=//
+# multiline comments
+comment_open=/*
+comment_close=*/
 
 # set to false if a comment character/string should start at column 0 of a line, true uses any
 # indentation of the line, e.g. setting to true causes the following on pressing CTRL+d
@@ -72,6 +44,11 @@ comment_use_indent=true
 
 # context action command (please see Geany's main documentation for details)
 context_action_cmd=
+
+[indentation]
+#width=4
+# 0 is spaces, 1 is tabs, 2 is tab & spaces
+#type=1
 
 [build_settings]
 # %f will be replaced by the complete filename
