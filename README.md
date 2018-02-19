@@ -14,15 +14,16 @@ Este proyecto es una configuración para el uso del `geany` donde agregamos el t
 De momento no hemos creado algún `script` para la instalación en **Windows**,
 para echar andar **geany web ninja** siga los siguientes pasos:
 
- - 1. Descargue el repositorio.
+ - 1.- Descargue el repositorio.
  - 2.- Decomprima
  - 3.- Copie el contenido de la carpeta `geany` en `C:\Users\<UserName>\AppData\Local\geany\`
- 
+
  > donde: **`<UserName>`** hace referencia al usuario actual.
 
 Bicatola de versiones
 --------------------------------------------------------------------------------
 
+ - **1.1** 2018/febrero/19 Soporte para vue.js
  - **1.0** 2011/noviembre/15
  - **1.1- Beta**  2012/julio/12
 
