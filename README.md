@@ -31,4 +31,5 @@ Principales caracteristicas versión actual 1.1- Beta
 
  - Cambio de estructura para Geany 0.20.
  - Soporte para **jQuery api**.
+ - Soporte para **VueJS**.
  - Soporte microdata **HTML5**.
