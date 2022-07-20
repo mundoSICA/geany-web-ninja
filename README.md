@@ -7,8 +7,10 @@ Este proyecto es una configuración para el uso del `geany` donde agregamos el t
 
 ## Instalación desde Linux:
 
-  wget https://raw.github.com/mundoSICA/geany-web-ninja/master/install.sh
-  bash install.sh
+```sh
+wget https://raw.github.com/mundoSICA/geany-web-ninja/master/install.sh
+bash install.sh
+```
 
 ## Instalación en Windows:
 
@@ -21,6 +23,7 @@ para echar andar **geany web ninja** siga los siguientes pasos:
 
  > donde: **`<UserName>`** hace referencia al usuario actual.
 
+
 Bicatola de versiones
 --------------------------------------------------------------------------------
 
@@ -29,6 +32,7 @@ Bicatola de versiones
  - **1.1- Beta**  2012/julio/12
  - **1.2- Beta**  2021/julio/20
 
+
 Principales caracteristicas versión actual 1.1- Beta
 --------------------------------------------------------------------------------
 
@@ -36,3 +40,11 @@ Principales caracteristicas versión actual 1.1- Beta
  - Soporte para **jQuery api**.
  - Soporte microdata **HTML5**.
  - Soporte para **VueJS**.
+
+
+Principales caracteristicas versión actual 1.2- Beta
+--------------------------------------------------------------------------------
+
+ - Definiendo la extensión de archivos vue como HTML.
+ - Agregando snippet `template`.
+ - Se agregaron la lista de temas disponibles actualmente en: <https://www.geany.org/download/themes/>
